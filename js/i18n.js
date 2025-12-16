@@ -23,7 +23,7 @@ window.I18N = {
     "about.quick3": "Secciones claras: tecnologías, skills, proyectos, contacto.",
 
     "tech.title": "Tecnologías",
-    "tech.subtitle": "Estructura lista para que luego metas tu lista real sin tocar el layout.",
+    "tech.subtitle": "Tecnologías que uso con regularidad",
     "tech.frontend": "Frontend",
     "tech.backend": "BackEnd",
     "tech.tools": "Herramientas",
@@ -35,8 +35,8 @@ window.I18N = {
     "skills.s1Body": "Código claro, modular y con intención.",
     "skills.s2Title": "Buenas prácticas",
     "skills.s2Body": "Legibilidad, mantenimiento y rendimiento.",
-    "skills.s3Title": "Entrega",
-    "skills.s3Body": "Iterar rápido sin romper todo. Normalmente.",
+    "skills.s3Title": "Metodologías",
+    "skills.s3Body": "Scrum, Agile.",
 
     "projects.title": "Proyectos",
     "projects.subtitle": "Queda listo el grid. Tú metes el contenido después.",
@@ -45,7 +45,7 @@ window.I18N = {
 
     "contact.title": "Contacto",
     "contact.subtitle": "Botones directos, sin formularios que nadie revisa.",
-    "contact.emailBtn": "Enviar email",
+    "contact.emailBtn": "Contactame",
     "contact.cardTitle": "Datos",
     "contact.nameLabel": "Nombre:",
     "contact.emailLabel": "Email:",
