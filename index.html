@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Jaime Tena Rios | Portfolio</title>
-    <meta name="description" content="Portfolio de Jaime Tena Rios: tecnologías, skills, proyectos y contacto." />
+    <title>Portfolio de jymydev</title>
+    <meta name="description" content="j" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Jaime Tena Rios | Portfolio" />
+    <meta property="og:title" content="Jaime Tena Rios - Software Developer" />
     <meta property="og:description" content="Tecnologías, skills, proyectos y contacto." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/img/og-image.png" />
@@ -17,6 +17,7 @@
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,10 +25,6 @@
 
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="#top" aria-label="Ir al inicio">
-                <span class="brand-dot" aria-hidden="true"></span>
-                <span>Jaime Tena Rios</span>
-            </a>
 
             <nav class="nav" aria-label="Navegación principal">
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
@@ -40,13 +37,38 @@
                     <li><a href="#tech" data-i18n="nav.tech">Tecnologías</a></li>
                     <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
                     <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
-                <button id="langToggle" class="btn btn-ghost" type="button" aria-label="Cambiar idioma">
-                    ES / EN
+                <button id="langToggle" class="btn btn-ghost lang-toggle" type="button" aria-label="Cambiar idioma">
+                    <span class="flag flag-es" aria-hidden="true">
+                        <!-- España -->
+                        <svg width="30" height="30" viewBox="0 0 20 14">
+                            <rect width="20" height="14" fill="#AA151B" />
+                            <rect y="4" width="20" height="6" fill="#F1BF00" />
+                        </svg>
+                    </span>
+
+                    <span class="flag flag-en" aria-hidden="true">
+                        <!-- Gran Bretaña -->
+                        <svg width="30" height="30" viewBox="0 0 60 30">
+                            <clipPath id="s">
+                                <path d="M0,0 v30 h60 v-30 z" />
+                            </clipPath>
+                            <clipPath id="t">
+                                <path d="M30,15 h30 v15 z v-30 h-30 z h-30 v30 z" />
+                            </clipPath>
+                            <g clip-path="url(#s)">
+                                <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFF" stroke-width="6" />
+                                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E"
+                                    stroke-width="4" />
+                                <path d="M30,0 v30 M0,15 h60" stroke="#FFF" stroke-width="10" />
+                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                            </g>
+                        </svg>
+                    </span>
                 </button>
                 <a class="btn btn-primary" href="assets/cv/Jaime_Tena_Rios_CV.pdf" target="_blank" rel="noopener"
                     data-i18n="cta.cv">
@@ -63,19 +85,29 @@
                 <p class="kicker" data-i18n="hero.kicker">Desarrollador</p>
                 <h1 class="headline" data-i18n="hero.title">Hola, soy Jaime.</h1>
                 <p class="subhead" data-i18n="hero.subtitle">
-                    Construyo cosas limpias, rápidas y mantenibles. A veces incluso a la primera.
-                </p>
 
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">Ver proyectos</a>
-                    <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Contactar</a>
-                </div>
+                <div class="contact-actions">
 
-                <div class="meta">
-                    <a class="pill" href="https://github.com/jtenarios" target="_blank" rel="noopener">GitHub</a>
-                    <a class="pill" href="https://www.linkedin.com/in/jaime-tena-rios-434b11182/" target="_blank"
-                        rel="noopener">LinkedIn</a>
-                    <a class="pill" href="mailto:jymydev@gmail.com">jymydev@gmail.com</a>
+                    <a class="btn btn-ghost" href="mailto:jymydev@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span data-i18n="contact.emailBtn">Enviar email</span>
+                    </a>
+
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/jaime-tena-rios-434b11182/"
+                        target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.9 2.6 4.9 6V24h-4v-8.4c0-2 0-4.6-2.8-4.6s-3.2 2.2-3.2 4.4V24h-4V8z" />
+                        </svg>
+
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -85,20 +117,9 @@
             <div class="container grid-2">
                 <div>
                     <h2 data-i18n="about.title">Sobre mí</h2>
-                    <p data-i18n="about.body">
-                        Portfolio minimalista y directo: qué uso, qué sé hacer y dónde ver mi trabajo.
-                        Aquí no hay humo. Solo HTML, CSS y JavaScript.
-                    </p>
+                    <p data-i18n="about.body"> </p>
                 </div>
-
-                <div class="card">
-                    <h3 data-i18n="about.quickTitle">En corto</h3>
-                    <ul class="list">
-                        <li data-i18n="about.quick1">SPA estática, rápida y accesible.</li>
-                        <li data-i18n="about.quick2">Multiidioma por botón (ES/EN).</li>
-                        <li data-i18n="about.quick3">Secciones claras: tecnologías, skills, proyectos, contacto.</li>
-                    </ul>
-                </div>
+                <img src="assets/img/MuthenRhosi_Face.png" alt="Jaime Tena Rios" class="about-image" />
             </div>
         </section>
 
@@ -229,41 +250,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <div class="container grid-2">
-                <div>
-                    <h2 data-i18n="contact.title">Contacto</h2>
-                    <p class="muted" data-i18n="contact.subtitle">
-                        Botones directos, sin formularios que nadie revisa.
-                    </p>
-
-                    <div class="contact-actions">
-                        <a class="btn btn-primary" href="mailto:jymydev@gmail.com" data-i18n="contact.emailBtn">Enviar
-                            email</a>
-                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/jaime-tena-rios-434b11182/"
-                            target="_blank" rel="noopener">LinkedIn</a>
-                        <a class="btn btn-ghost" href="https://github.com/jtenarios" target="_blank"
-                            rel="noopener">GitHub</a>
-                    </div>
-                </div>
-
-                <aside class="card">
-                    <h3 data-i18n="contact.cardTitle">Datos</h3>
-                    <ul class="list">
-                        <li><strong data-i18n="contact.nameLabel">Nombre:</strong> <span>Jaime Tena Rios</span></li>
-                        <li><strong data-i18n="contact.emailLabel">Email:</strong> <a
-                                href="mailto:jymydev@gmail.com">jymydev@gmail.com</a></li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p class="muted">© <span id="year"></span> Jaime Tena Rios</p>
+            <p class="muted">© <span id="year"></span> Jymydev</p>
             <a class="muted" href="#top" data-i18n="footer.top">Volver arriba</a>
         </div>
     </footer>

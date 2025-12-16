@@ -11,12 +11,12 @@ window.I18N = {
 
     "hero.kicker": "Desarrollador",
     "hero.title": "Hola, soy Jaime.",
-    "hero.subtitle": "Construyo cosas limpias, rápidas y mantenibles. A veces incluso a la primera.",
+    "hero.subtitle": "+15 años de experiencia. <span style=\"color: rgb(234, 179, 8);\">Software developer</span> de Sevilla, España. Especializado en bases de datos oracles",
     "hero.ctaProjects": "Ver proyectos",
     "hero.ctaContact": "Contactar",
 
     "about.title": "Sobre mí",
-    "about.body": "Portfolio minimalista y directo: qué uso, qué sé hacer y dónde ver mi trabajo. Aquí no hay humo. Solo HTML, CSS y JavaScript.",
+    "about.body": "Me llamo Jaime, Desarrollador backend mid-senior con enfoque en soluciones estables y mantenibles.<br>Experiencia principal en backend y conocimientos de frontend para desarrollo full-stack cuando es necesario.<br>Orientado a buenas prácticas, claridad de código y resultados.<br>Inglés nivel medio en aprendizaje continuo.",
     "about.quickTitle": "En corto",
     "about.quick1": "SPA estática, rápida y accesible.",
     "about.quick2": "Multiidioma por botón (ES/EN).",

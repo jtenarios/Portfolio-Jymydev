@@ -40,7 +40,13 @@
       const key = node.getAttribute("data-i18n");
       if (!key) return;
       const val = dict[key];
-      if (typeof val === "string") node.textContent = val;
+      if (typeof val === "string") {
+        if (val.includes("<")) {
+          node.innerHTML = val;
+        } else {
+          node.textContent = val;
+        }
+      }
     });
 
     localStorage.setItem("lang", lang);
