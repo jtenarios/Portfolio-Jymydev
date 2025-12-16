@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jaime Tena Rios | Portfolio</title>
+    <meta name="description" content="Portfolio de Jaime Tena Rios: tecnologías, skills, proyectos y contacto." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jaime Tena Rios | Portfolio" />
+    <meta property="og:description" content="Tecnologías, skills, proyectos y contacto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-image.png" />
+
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Ir al inicio">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span>Jaime Tena Rios</span>
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                    <span class="sr-only" data-i18n="nav.menu">Menú</span>
+                    <span aria-hidden="true">☰</span>
+                </button>
+
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+                    <li><a href="#tech" data-i18n="nav.tech">Tecnologías</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="langToggle" class="btn btn-ghost" type="button" aria-label="Cambiar idioma">
+                    ES / EN
+                </button>
+                <a class="btn btn-primary" href="assets/cv/Jaime_Tena_Rios_CV.pdf" target="_blank" rel="noopener"
+                    data-i18n="cta.cv">
+                    Ver CV (PDF)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section id="top" class="section hero">
+            <div class="container">
+                <p class="kicker" data-i18n="hero.kicker">Desarrollador</p>
+                <h1 class="headline" data-i18n="hero.title">Hola, soy Jaime.</h1>
+                <p class="subhead" data-i18n="hero.subtitle">
+                    Construyo cosas limpias, rápidas y mantenibles. A veces incluso a la primera.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">Ver proyectos</a>
+                    <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Contactar</a>
+                </div>
+
+                <div class="meta">
+                    <a class="pill" href="https://github.com/jtenarios" target="_blank" rel="noopener">GitHub</a>
+                    <a class="pill" href="https://www.linkedin.com/in/jaime-tena-rios-434b11182/" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                    <a class="pill" href="mailto:jymydev@gmail.com">jymydev@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container grid-2">
+                <div>
+                    <h2 data-i18n="about.title">Sobre mí</h2>
+                    <p data-i18n="about.body">
+                        Portfolio minimalista y directo: qué uso, qué sé hacer y dónde ver mi trabajo.
+                        Aquí no hay humo. Solo HTML, CSS y JavaScript.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 data-i18n="about.quickTitle">En corto</h3>
+                    <ul class="list">
+                        <li data-i18n="about.quick1">SPA estática, rápida y accesible.</li>
+                        <li data-i18n="about.quick2">Multiidioma por botón (ES/EN).</li>
+                        <li data-i18n="about.quick3">Secciones claras: tecnologías, skills, proyectos, contacto.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH -->
+        <section id="tech" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="tech.title">Tecnologías</h2>
+                    <p class="muted" data-i18n="tech.subtitle">
+                        Estructura lista para que luego metas tu lista real sin tocar el layout.
+                    </p>
+                </div>
+
+                <div class="cards-4">
+                    <article class="card">
+                        <h3 data-i18n="tech.frontend">Frontend</h3>
+                        <ul class="tags" id="frontendList">
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                            <li class="tag">JavaScript</li>
+                            <li class="tag muted-tag" data-i18n="placeholders.editLater">Editar más tarde</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 data-i18n="tech.backend">BackEnd</h3>
+                        <ul class="tags" id="backendList">
+                            <li class="tag muted-tag" data-i18n="placeholders.editLater">Editar más tarde</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 data-i18n="tech.tools">Herramientas</h3>
+                        <ul class="tags" id="toolsList">
+                            <li class="tag">Git</li>
+                            <li class="tag muted-tag" data-i18n="placeholders.editLater">Editar más tarde</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3 data-i18n="tech.learning">Aprendiendo</h3>
+                        <ul class="tags" id="learningList">
+                            <li class="tag muted-tag" data-i18n="placeholders.editLater">Editar más tarde</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="skills.title">Skills</h2>
+                    <p class="muted" data-i18n="skills.subtitle">
+                        Placeholder limpio. Luego pones tus skills reales (y si quieres niveles).
+                    </p>
+                </div>
+
+                <div class="cards-3">
+                    <article class="card">
+                        <h3 data-i18n="skills.s1Title">Arquitectura y código</h3>
+                        <p class="muted" data-i18n="skills.s1Body">Código claro, modular y con intención.</p>
+                    </article>
+                    <article class="card">
+                        <h3 data-i18n="skills.s2Title">Buenas prácticas</h3>
+                        <p class="muted" data-i18n="skills.s2Body">Legibilidad, mantenimiento y rendimiento.</p>
+                    </article>
+                    <article class="card">
+                        <h3 data-i18n="skills.s3Title">Entrega</h3>
+                        <p class="muted" data-i18n="skills.s3Body">Iterar rápido sin romper todo. Normalmente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 data-i18n="projects.title">Proyectos</h2>
+                    <p class="muted" data-i18n="projects.subtitle">Queda listo el grid. Tú metes el contenido después.
+                    </p>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="card project">
+                        <div class="project-head">
+                            <h3>Proyecto 1</h3>
+                            <span class="badge" data-i18n="placeholders.comingSoon">Próximamente</span>
+                        </div>
+                        <p class="muted" data-i18n="placeholders.projectDesc">Descripción breve del proyecto.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.demo">Demo</a>
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.repo">Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="project-head">
+                            <h3>Proyecto 2</h3>
+                            <span class="badge" data-i18n="placeholders.comingSoon">Próximamente</span>
+                        </div>
+                        <p class="muted" data-i18n="placeholders.projectDesc">Descripción breve del proyecto.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.demo">Demo</a>
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.repo">Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="project-head">
+                            <h3>Proyecto 3</h3>
+                            <span class="badge" data-i18n="placeholders.comingSoon">Próximamente</span>
+                        </div>
+                        <p class="muted" data-i18n="placeholders.projectDesc">Descripción breve del proyecto.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.demo">Demo</a>
+                            <a class="btn btn-small btn-ghost" href="#" aria-disabled="true"
+                                data-i18n="projects.repo">Repo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container grid-2">
+                <div>
+                    <h2 data-i18n="contact.title">Contacto</h2>
+                    <p class="muted" data-i18n="contact.subtitle">
+                        Botones directos, sin formularios que nadie revisa.
+                    </p>
+
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:jymydev@gmail.com" data-i18n="contact.emailBtn">Enviar
+                            email</a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/jaime-tena-rios-434b11182/"
+                            target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn btn-ghost" href="https://github.com/jtenarios" target="_blank"
+                            rel="noopener">GitHub</a>
+                    </div>
+                </div>
+
+                <aside class="card">
+                    <h3 data-i18n="contact.cardTitle">Datos</h3>
+                    <ul class="list">
+                        <li><strong data-i18n="contact.nameLabel">Nombre:</strong> <span>Jaime Tena Rios</span></li>
+                        <li><strong data-i18n="contact.emailLabel">Email:</strong> <a
+                                href="mailto:jymydev@gmail.com">jymydev@gmail.com</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="muted">© <span id="year"></span> Jaime Tena Rios</p>
+            <a class="muted" href="#top" data-i18n="footer.top">Volver arriba</a>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
